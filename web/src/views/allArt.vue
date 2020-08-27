@@ -40,7 +40,8 @@
         <cardList :navs="navs" :articles="articles">
           <template #items="{articles}">
             <router-link
-              :to="toArticle(item)"
+              @click.native="toArticle(item)"
+              to="/"
               tag="div"
               class="p-2 f-lg d-fx art-item ai-center"
               v-for="(item, i) in articles.articles"
@@ -119,14 +120,19 @@ export default {
     },
   },
   methods: {
+    click() {
+      console.log(111);
+    },
     back() {
       this.$router.go(-1);
     },
     toArticle(item) {
       if (item.lostTime) {
-        return `articles/lost/${item.id}`;
+        this.$router.push(`articles/lost/${item.id}`);
+        //return `articles/lost/${item.id}`;
       } else {
-        return `articles/found/${item.id}`;
+        this.$router.push(`articles/foun/${item.id}`);
+        //return `articles/found/${item.id}`;
       }
     },
     contScroll(position) {

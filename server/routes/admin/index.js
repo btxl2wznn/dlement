@@ -297,7 +297,8 @@ module.exports = (app) => {
   app.post("/admin/api/upload", upload.single("file"), async (req, res) => {
     const file = req.file;
     //file.url = `http://localhost:5555/uploads/${file.filename}`;
-    file.url = `http://192.168.1.5:5555/uploads/${file.filename}`;
+    //file.url = `http://192.168.1.5:5555/uploads/${file.filename}`;
+    file.url = `http://47.97.249.152:5555/uploads/${file.filename}`;
     res.send(file);
   });
 
