@@ -128,10 +128,10 @@ export default {
     },
     toArticle(item) {
       if (item.lostTime) {
-        this.$router.push(`articles/lost/${item.id}`);
+        this.$router.replace(`articles/lost/${item.id}`);
         //return `articles/lost/${item.id}`;
       } else {
-        this.$router.push(`articles/foun/${item.id}`);
+        this.$router.replace(`articles/foun/${item.id}`);
         //return `articles/found/${item.id}`;
       }
     },

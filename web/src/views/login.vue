@@ -38,6 +38,7 @@
             v-model="model.userNum"
             name="学号"
             label="学号"
+            type="digit"
             placeholder="学号"
             :rules="[{ required: true, message: '请填写用户名' }]"
           />
