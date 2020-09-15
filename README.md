@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 湖南科技大学失物招领平台（丢了么-dlement）
 
 #### 介绍
@@ -28,3 +29,7 @@ vue+node(express)+mysql
 2.  新建 Feat_xxx 分支
 3.  提交代码
 4.  新建 Pull Request
+=======
+# dlement
+丢了么（科大失物招领平台）
+>>>>>>> 8552ce3d8600be23f142aa02aca8b47cc444ec28
