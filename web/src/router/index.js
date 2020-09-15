@@ -33,6 +33,12 @@ const routes = [
       keepAlive: true, //需要被缓存的组件
       isPublic: true,
     },
+    // name: "mainView",
+    // component: mainView,
+    // meta: {
+    //   keepAlive: true,
+    //   isPublic: true,
+    // },
   },
   {
     path: "/login",
